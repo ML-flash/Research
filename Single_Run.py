@@ -25,7 +25,7 @@ from Leading_ones import LeadingOnesFitness
 # -------------------------------
 # Global Settings and Seed
 # -------------------------------
-MAX_LENGTH = 20
+PHASE_SWITCH_GENERATIONS
 GLOBAL_SEED = None
 random.seed(GLOBAL_SEED)
 
@@ -51,7 +51,7 @@ def update_best_organism(current_genome, current_fitness, verbose=True):
 # -------------------------------
 # Initialize Fitness Function & Genes
 # -------------------------------
-fitness_function = LeadingOnesFitness(max_length=MAX_LENGTH, update_best_func=update_best_organism)
+fitness_function = LeadingOnesFitness(phase_switch_generations=PHASE_SWITCH_GENERATIONS, update_best_func=update_best_organism)
 genes = fitness_function.genes
 
 # -------------------------------
